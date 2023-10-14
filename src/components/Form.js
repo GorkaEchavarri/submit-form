@@ -1,20 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './Form.module.css';
 
 function Form() {
+
+  const[enteredName, setEnteredName] = useState('');
+  const[enteredEmail, setEnteredEmail] = useState('');
+  const[enteredPhone, setEnteredPhone] = useState('');
+
+  function NameSubmitHandler(event) {
+    setEnteredName(event.target.value)
+  };
+  function EmailSubmitHandler(event) {
+    setEnteredEmail(event.target.value)
+  };
+  function PhoneSubmitHandler(event) {
+    setEnteredPhone(event.target.value)
+  };
+
+  function submitHander(event) {
+    event.preventDefault();
+    console.log(enteredName)
+    console.log(enteredEmail)
+    console.log(enteredPhone)
+    console.log("Succesfully Submitted!!")
+    setEnteredName('')
+    setEnteredEmail('')
+    setEnteredPhone('')
+  };
+
   return (
     <div>
-		<form className={classes['card-form']}>
+		<form className={classes['card-form']} onSubmit={submitHander}>
 			<div className={classes.input}>
-				<input type="text" className={classes["input-field"]} required/>
+				<input type="text" className={classes["input-field"]} value={enteredName} onChange={NameSubmitHandler} required/>
 				<label className={classes["input-label"]}>Full name</label>
 			</div>
 						<div className={classes.input}>
-				<input type="email" className={classes["input-field"]} required/>
+				<input type="email" className={classes["input-field"]} value={enteredEmail} onChange={EmailSubmitHandler} required/>
 				<label className={classes["input-label"]}>Email</label>
 			</div>
 						<div className={classes.input}>
-				<input type="text" className={classes["input-field"]} required/>
+				<input type="text" className={classes["input-field"]} value={enteredPhone} onChange={PhoneSubmitHandler} required/>
 				<label className={classes["input-label"]}>Phone Number</label>
 			</div>
 			<div className={classes.action}>
