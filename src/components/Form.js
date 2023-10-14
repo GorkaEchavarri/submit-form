@@ -3,28 +3,25 @@ import classes from './Form.module.css';
 
 function Form() {
   return (
-    <form className={classes.form} >
     <div>
-      <p>
-        <label htmlFor='name'>Name</label>
-        <br></br>
-        <input type="text" id="name" />
-      </p>
-      <p>
-        <label htmlFor='address'>Email Address</label>
-        <br></br>
-        <input type="email" id="address" />
-      </p>
-      <p>
-        <label htmlFor='phone'>Phone Number</label>
-        <br></br>
-        <input type="text" id="phone" />
-      </p>
+		<form className={classes['card-form']}>
+			<div className={classes.input}>
+				<input type="text" className={classes["input-field"]} required/>
+				<label className={classes["input-label"]}>Full name</label>
+			</div>
+						<div className={classes.input}>
+				<input type="email" className={classes["input-field"]} required/>
+				<label className={classes["input-label"]}>Email</label>
+			</div>
+						<div className={classes.input}>
+				<input type="text" className={classes["input-field"]} required/>
+				<label className={classes["input-label"]}>Phone Number</label>
+			</div>
+			<div className={classes.action}>
+				<button className={classes["action-button"]}>Submit info</button>
+			</div>
+		</form>
     </div>
-    <p>
-      <button type="submit" className="button">Add User</button>
-    </p>
-    </form>
   )
 };
 
