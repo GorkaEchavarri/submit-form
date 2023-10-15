@@ -1,71 +1,65 @@
-# Getting Started with Create React App
+# Humanitarian Operations - Mid Level Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Submit info Form created in React.
 
-## Available Scripts
+App Deployed by Netify, please visit: https://app.netlify.com/sites/gorka-echavarri-submit-form/configuration/general
 
-In the project directory, you can run:
+Find the source code in src folder where the main file App.js renders all the components.
 
-### `npm start`
+I also created a Project at https://github.com/users/GorkaEchavarri/projects/3
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Here pending work and finished features can be checked for future reference. I made it public so it could be checked by anyone.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description
 
-### `npm test`
+Submit info Form in React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Fields for name, email address, and phone number 
 
-### `npm run build`
+-Validation to ensure that all required fields are filled in 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Validation to ensure that the email address is valid 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-A success message that is displayed upon successful submission 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Clear the form fields upon successful submission 
 
-### `npm run eject`
+-Implement real-time validation as the user fills out the form, such as showing an error message when the user types of an invalid email address 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Add client-side error messages for each field that is invalid
+  
+### Pending or Future functionalities
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-A submit button that sends the form data to a server (you can use a mock server or API, or use a tool like Mockoon or Postman to mock the server) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Add more fields to the form, such as address or date of birth 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-Use a serverless architecture with a service like Firebase or AWS Lambda to handle form submissions 
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+react: Version 18.2.0
 
-### Code Splitting
+react-dom: Version 18.2.0
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+react-scripts: Version 5.0.1
 
-### Analyzing the Bundle Size
+### Executing program
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Please visit: https://gorka-echavarri-submit-form.netlify.app/
 
-### Making a Progressive Web App
+To run the site in the localhost run:
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Noted issues
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Author
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# submit-form
+Gorka Echavarri
