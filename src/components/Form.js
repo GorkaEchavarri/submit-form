@@ -7,6 +7,7 @@ function Form(props) {
   const[enteredEmail, setEnteredEmail] = useState('');
   const[enteredPhone, setEnteredPhone] = useState('');
 
+  //The three following functions take the users data
   function NameSubmitHandler(event) {
     setEnteredName(event.target.value)
   };
@@ -17,6 +18,7 @@ function Form(props) {
     setEnteredPhone(event.target.value)
   };
 
+  //Console logs the form when it's submitted. It should be sent the form to a server.
   function submitHander(event) {
     event.preventDefault();
 
@@ -24,7 +26,7 @@ function Form(props) {
     console.log(enteredEmail)
     console.log(enteredPhone)
 
-
+    // To clear the form fields after submission
     setEnteredName('')
     setEnteredEmail('')
     setEnteredPhone('')
@@ -36,7 +38,7 @@ function Form(props) {
 
   return (
     <div>
-		<form className={classes['card-form']} onSubmit={submitHander}>
+		<form className={classes['card-form']} onSubmit={submitHander} id='submitForm'>
 			<div className={classes.input}>
 				<input type="text" className={classes["input-field"]} value={enteredName} onChange={NameSubmitHandler} required/>
 				<label className={classes["input-label"]}>Full name</label>
