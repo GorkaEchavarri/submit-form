@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classes from './Form.module.css';
 
-function Form() {
+function Form(props) {
 
   const[enteredName, setEnteredName] = useState('');
   const[enteredEmail, setEnteredEmail] = useState('');
@@ -26,7 +26,11 @@ function Form() {
     setEnteredName('')
     setEnteredEmail('')
     setEnteredPhone('')
+
+    props.onFormSubmit();
   };
+
+
 
   return (
     <div>
