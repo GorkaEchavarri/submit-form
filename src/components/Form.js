@@ -19,10 +19,12 @@ function Form(props) {
 
   function submitHander(event) {
     event.preventDefault();
+
     console.log(enteredName)
     console.log(enteredEmail)
     console.log(enteredPhone)
-    console.log("Succesfully Submitted!!")
+
+
     setEnteredName('')
     setEnteredEmail('')
     setEnteredPhone('')

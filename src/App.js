@@ -9,6 +9,7 @@ function App() {
 
   function toggleSuccess() {
     setShowSuccess(true);
+    //The popup dissapears after 3 seconds (3000 miliseconds)
     setTimeout(() => {setShowSuccess(false);}, 3000);
   }
 
